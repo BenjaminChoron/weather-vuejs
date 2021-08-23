@@ -2,11 +2,11 @@
     <div class="container">
         <h1 class="my-4 text-center">
             <img src="../assets/weather.svg" alt="weather" style="width: 50px">
-            Météo
+            Weather
         </h1>
 
         <div class="form-group mb-5 text-center">
-            <label class="mb-2" for="position">Entrez le nom d'une ville</label>
+            <label class="mb-2" for="position">Enter city name</label>
             <input 
                 type="text" 
                 name="position" 
@@ -15,7 +15,7 @@
                 v-model="request"
                 v-on:keypress="getWeather"
             >
-            <button class="btn btn-warning mt-3" v-on:click="getWeatherClick">Recherche</button>
+            <button class="btn btn-warning mt-3" v-on:click="getWeatherClick">Search</button>
         </div>
 
         <div class="card text-center mb-3" style="width: 18rem;" v-if="weather">

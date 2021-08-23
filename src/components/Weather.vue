@@ -1,5 +1,23 @@
 <template>
-    <div class="container"></div>
+    <div class="container">
+        <h1 class="my-4 text-center">
+            <img src="../assets/weather.svg" alt="weather" style="width: 50px">
+            Météo
+        </h1>
+
+        <div class="form-group mb-5 text-center">
+            <label class="mb-2" for="position">Entrez le nom d'une ville</label>
+            <input 
+                type="text" 
+                name="position" 
+                id="position"
+                class="form-control"
+                v-model="request"
+                v-on:keypress="goMeteo"
+            >
+            <button class="btn btn-warning mt-3" v-on:click="goMeteoClick">Recherche</button>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -41,5 +59,11 @@ export default {
 </script>
 
 <style>
-
+h1, label {
+    color: whitesmoke;
+}
+.icon {
+    width: 30px;
+    margin: .4rem;
+}
 </style>

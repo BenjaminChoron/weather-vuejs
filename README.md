@@ -1,4 +1,6 @@
-# meteo-vue
+# Weather app using Vue.js
+
+
 
 ## Project setup
 ```
